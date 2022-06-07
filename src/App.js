@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/Home/Home";
+import Header from "./pages/Header/Header";
+import SingleRoom from "./pages/Home/SingleRooms/SingleRooms";
+import DoubleRooms from "./pages/Home/DoubleRooms/DoubleRooms";
+import FamilyRooms from "./pages/Home/FamilyRooms/FamilyRooms";
+import Login from "./pages/Login/Login";
+import Orders from "./pages/Orders/Orders";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header></Header>
+      <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/singleRooms" element={<SingleRoom></SingleRoom>}></Route>
+        <Route
+          path="/doubleRooms"
+          element={<DoubleRooms></DoubleRooms>}
+        ></Route>
+        <Route
+          path="/familyRooms"
+          element={<FamilyRooms></FamilyRooms>}
+        ></Route>
+        <Route path="orders"  element={<Orders></Orders>}></Route>
+        <Route path="/login" element={<Login></Login>}></Route>
+      </Routes>
     </div>
   );
 }

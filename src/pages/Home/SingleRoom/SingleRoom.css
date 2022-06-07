@@ -1,0 +1,28 @@
+.single_room{
+    border: 1px solid orange;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.single_room img{
+  width: 100%;
+}
+
+.single_item{
+    margin: 15px 0;
+    padding: 10px 0;
+}
+
+.single_link{
+    width: 100%;
+    background-color: rgba(255, 166, 0, 0.758);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+   cursor: pointer;
+   text-decoration: none;
+}
+.single_link:hover{
+    background-color: rgb(255, 166, 0)
+}

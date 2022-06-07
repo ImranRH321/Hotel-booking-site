@@ -1,0 +1,15 @@
+.container{
+  margin-bottom: 70px;
+}
+
+.single_title_rooms{
+    text-align: center;
+    font-size: 30px;
+}
+
+.single_rooms_container{
+    display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin: 10px 10px;
+}
